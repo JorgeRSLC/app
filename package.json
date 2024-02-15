@@ -1,0 +1,25 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "app for testing different functionalities",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JorgeRSLC/app.git"
+  },
+  "author": "Jorge Rodriguez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JorgeRSLC/app/issues"
+  },
+  "homepage": "https://github.com/JorgeRSLC/app#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.2",
+    "express-handlebars": "^7.1.2",
+    "mongoose": "^8.1.2"
+  }
+}
