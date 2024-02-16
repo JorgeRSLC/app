@@ -10,6 +10,9 @@ app.engine('hbs', expressHandlebars({ defaultLayout: 'main',
         extname: '.hbs' }));
 app.set('view engine', 'hbs');
 
+// import the database connection
+require('./db');
+
 // static resources
 app.use(express.static(__dirname+'/public'));
 
