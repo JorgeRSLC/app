@@ -1,8 +1,8 @@
 <body>
-    <h1>First Names</h1>
+    <h1>Names</h1>
     <ul>
         {{#each names}}
-            <li>{{this}}</li>
+            <li>{{this.name}}</li>
         {{/each}}
     </ul>
     <form action="/add-name" method="GET">
