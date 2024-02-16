@@ -11,7 +11,7 @@ app.engine('hbs', expressHandlebars({ defaultLayout: 'main',
 app.set('view engine', 'hbs');
 
 // static resources
-app.use(express.static(__dirname+'public'));
+app.use(express.static(__dirname+'/public'));
 
 // parse JSON and URL encoded data
 app.use(express.json());
