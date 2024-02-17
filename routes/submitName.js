@@ -1,4 +1,4 @@
-module.exports = (req, res) => {
+module.exports = async (req, res) => {
     // import name models 
     const firstNamesModel = require('../models/firstNameModel');
     const lastNamesModel = require('../models/lastNameModel');
@@ -12,8 +12,8 @@ module.exports = (req, res) => {
     const newLastName = new lastNamesModel({ lastName: lastName });
 
     // save the new first name and last name
-    newFirstName.save();
-    newLastName.save();
+    await newFirstName.save();
+    await newLastName.save();
 
     // redirect to the displayNames route
     res.redirect('/displayNames');
